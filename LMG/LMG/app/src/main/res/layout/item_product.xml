@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_view_1"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_product_1"
+            android:contentDescription="@string/label_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_product_height" />
+
+        <TextView
+            android:id="@+id/tv_product_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:gravity="center_horizontal"
+            tools:text="Avent Medium-flow Silicone Teats"
+            style="@style/style_product_title"/>
+
+        <TextView
+            android:id="@+id/tv_product_price_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="639"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingLeft="@dimen/min_widget_margin"
+            android:paddingStart="@dimen/min_widget_margin"
+            android:paddingEnd="@dimen/min_widget_margin"
+            android:paddingRight="@dimen/min_widget_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:id="@+id/ll_view_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:id="@+id/iv_product_2"
+            android:contentDescription="@string/label_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_product_height" />
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/tv_product_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:gravity="center_horizontal"
+            tools:text="Avent Medium-flow Silicone Teats"
+            style="@style/style_product_title"/>
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/tv_product_price_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/min_widget_margin"
+            android:paddingStart="@dimen/min_widget_margin"
+            android:paddingEnd="@dimen/min_widget_margin"
+            android:paddingRight="@dimen/min_widget_margin"
+            tools:text="639"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    
+</LinearLayout>

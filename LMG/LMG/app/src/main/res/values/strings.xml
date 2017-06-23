@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LMG</string>
+    <string name="action_settings">Settings</string>
+    <string name="currency_indian">INR</string>
+    <string name="currency_uae">AED</string>
+    <string name="currency_saudi">SAR</string>
+    <string name="activity_name_catalog">Catalog</string>
+</resources>

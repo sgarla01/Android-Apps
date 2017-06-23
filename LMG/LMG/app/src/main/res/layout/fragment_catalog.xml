@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rg_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_indian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rbtn_selector"
+                android:button="@null"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/currency_indian"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_uae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rbtn_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:text="@string/currency_uae"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+
+            <RadioButton
+                android:id="@+id/rb_saudi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rbtn_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_margin="2dp"
+                android:text="@string/currency_saudi"
+                android:textColor="@drawable/rbtn_textcolor_selector" />
+        </RadioGroup>
+
+        <View
+            android:layout_marginTop="@dimen/max_widget_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:padding="@dimen/min_widget_margin"
+            android:textSize="@dimen/catalog_name_size"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="Latest Trending"
+            android:id="@+id/tv_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_products"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vp_product_height"/>
+        <com.geekmk.lmg.pagerindicator.CirclePageIndicator
+            android:id="@+id/cpi_products"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:minHeight="32dp"
+            android:padding="8dp"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_marginBottom="@dimen/min_widget_margin"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/pb_loading"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>
